@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto de Graficación</title>
+<script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+<link rel="stylesheet" href="juan.css">
+</head>
+<body>
+    <h1>Proyecto de Graficación</h1>
+    <div id="menu-principal">
+        <button onclick="window.location.href='jose.html'">Gráfiacacion 2d</button>
+        <button onclick="seleccionarDimension('3D')">Gráficos 3D</button>
+    </div>
+
+    <div id="menu-3d" style="display: none;">
+        <button class="volver" onclick="volverMenuPrincipal()">← Volver</button>
+        <h2>Selecciona una Figura 3D</h2>
+        <button onclick="seleccionarFigura('cubo')">Cubo</button>
+        <button onclick="seleccionarFigura('esfera')">Esfera</button>
+        <button onclick="seleccionarFigura('cilindro')">Cilindro</button>
+        <button onclick="seleccionarFigura('piramide')">Pirámide</button>
+    </div>
+
+    <div id="menu-transformaciones" style="display: none;">
+        <button class="volver" onclick="volverMenu3D()">← Volver</button>
+        <h2>Transformaciones de la Figura</h2>
+        <button onclick="rotarFigura()">Rotar Figura</button>
+        <button onclick="escalarFigura()">Escalar Figura</button>
+        <button onclick="trasladarFigura()">Trasladar Figura</button>
+        <button onclick="trasladarInverso()">trasladar Inverso</button>
+        <button onclick="trasladarArriba()">trasladar Arriba</button>
+        <button onclick="trasladarAbajo()">trasladar Abajo</button>
+        <button onclick="resetFigura()">Restablecer Figura</button>
+    </div>
+
+    <canvas id="miCanvas"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>

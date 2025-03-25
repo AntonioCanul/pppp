@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<div style="position: relative; height: 100vh; background: lightgray;">
+    <body>
+        
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: lightblue; padding: 20px;">
+            <canvas id="canvas" width="1100" height="800" ></canvas>
+            <div class="grid-container">
+            
+        </div>
+
+        <div class="margen">
+        
+            <div class="card">
+                <h2>Traslación</h2>
+                <button onclick="translateX()">Aplicar X</button>
+                <button onclick="translate_X()">Aplicar -X</button>
+                <button onclick="translateY()">Aplicar Y</button>
+                <button onclick="translate_Y()">Aplicar -Y</button>
+              </div>
+              <div class="card">
+                <h2>Rotación</h2>
+                <button onclick="rotate()">Aplicar</button>
+              </div>
+              <div class="card">
+                <h2>Escalamiento</h2>
+                <button onclick="scale()">Aplicar</button>
+              </div>
+              <div class="card">
+                <h2>Sesgado</h2>
+                <button onclick="shear()">Aplicar</button>
+              </div>
+              <div class="card">
+                <h2>reiniciar</h2>
+                <button onclick="reset()">Aplicar</button>
+              </div>
+              <div class="card">
+                <h2>salir</h2>
+                <button onclick="window.location.href='juan.html'">Aplicar</button>
+              </div>
+            </div>
+        </div>
+
+    </body>
+    
+</div>
+<script src="graficadora.js"></script>
+</html>
